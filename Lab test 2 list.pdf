@@ -1,0 +1,109 @@
+Department of CSE, BMSCE
+ADA Lab program list for Test-2
+Aug-Dec 2019
+
+1. Using Dynamic Programming technique, write program for Printing Longest Common Subsequence (LCS): Given two sequences, print the longest subsequence present in both of them.
+Examples:
+LCS for input Sequences “ABCDGH” and “AEDFHR” is “ADH” of length 3.
+LCS for input Sequences “AGGTAB” and “GXTXAYB” is “GTAB” of length 4.
+
+
+2. Using Dynamic Programming technique, write program to solve 0-1 knapsack problem. Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. In other words, given two integer arrays val[0..n-1] and wt[0..n-1] which represent values and weights associated with n items respectively. Also given an integer W which represents knapsack capacity, find out the maximum value subset of val[] such that sum of the weights of this subset is smaller than or equal to W. You cannot break an item, either pick the complete item, or don’t pick it (0-1 property).
+Example:
+
+
+3. Using Dynamic Programming technique, write program to find minimum Edit distance. Given two text strings A of length n and B of length m, to transform A into B using a minimum number of operations of the following types: delete a character from A, insert a character into A, or change some character in A into a new character. The minimal number of such operations required to transform A into B is called the edit distance between A and B. For example, the edit distance(abbc, xbbacd) = 3 (change a to x; insert a after bb; insert d after c) Find a recurrence relation that is useful to find the edit distance of two strings A and B. 
+Examples:
+Input:   str1 = "geek", str2 = "gesek"
+Output:  1
+We can convert str1 into str2 by inserting a 's'.
+
+Input:   str1 = "cat", str2 = "cut"
+Output:  1
+We can convert str1 into str2 by replacing 'a' with 'u'.
+
+Input:   str1 = "sunday", str2 = "saturday"
+Output:  3
+Last three and first characters are same.  We basically need to convert "un" to "atur".  This can be done using below three operations.  Replace 'n' with 'r', insert t, insert a
+
+
+
+
+
+4. Using the concept of Transform and Conquer technique, Write program to find smallest range containing elements from k lists. Given k sorted lists of integers of size n each, find the smallest range that includes at least element from each of the k lists. If more than one smallest ranges are found, print any one of them.
+Example:
+Input:
+K = 3
+arr1[] : [4, 7, 9, 12, 15]
+arr2[] : [0, 8, 10, 14, 20]
+arr3[] : [6, 12, 16, 30, 50]
+Output:
+The smallest range is [6 8] 
+Input: 
+k = 3
+arr1[] : [4, 7]
+arr2[] : [1, 2]
+arr3[] : [20, 40]
+Output
+The smallest range is [2 20] 
+
+5. Using Dynamic Programming technique, write Program to solve Minimum Coin Changing Problem. In this problem the goal is to make change for an amount using least number of coins from the available denominations. 
+Example
+Say I went to a shop and bought 4 toffees. It cost me Rs. 4 in total. So, I gave Rs. 10 to the shopkeeper. 
+The shopkeeper had Rs. 1 coins, Rs. 2 coins and Rs. 5 coins with him.
+Now, the goal is: The shopkeeper has to make change for Rs. 6 using least number of coins from the available denominations coins (1, 2 and 5)
+Answer
+Therefore, to make change of amount Rs. 6 the shopkeeper will need minimum 2 coins and the coins will be Rs. 1 and Rs. 5 
+
+6. Using Prims Algorithm, write program  to find Minimum Cost Spanning Tree,
+Input
+
+Output
+
+
+
+
+
+
+
+
+7. Using Dynamic Programming technique, write program to solve partition problem.  Partition problem is to determine whether a given set can be partitioned into two subsets such that the sum of elements in both subsets is same. 
+Examples:
+arr[] = {1, 5, 11, 5} 
+Output: true 
+The array can be partitioned as {1, 5, 5} and {11} 
+arr[] = {1, 5, 3} 
+Output: false 
+The array cannot be partitioned into equal sum sets. 
+
+
+8. Using Greedy Technique, write program to solve shortest path problem using Dijkstra’s algorithm. Given a graph and a source vertex in the graph, find shortest paths from source to all vertices in the given graph.
+Input
+
+Output
+
+
+
+
+9. Using Dynamic Programming Technique, write program to solve all pairs Shortest Path by Floyd’s Algorithm.
+Input
+
+
+Output
+
+
+10. Using Dynamic Programming, write program to solve Longest increasing subsequence.  The Longest Increasing Subsequence (LIS) problem is to find the length of the longest subsequence of a given sequence such that all elements of the subsequence are sorted in increasing order. For example, the length of LIS for {10, 22, 9, 33, 21, 50, 41, 60, 80} is 6 and LIS is {10, 22, 33, 50, 60, 80}.
+
+
+Examples:
+Input  : arr[] = {3, 10, 2, 1, 20}
+Output : Length of LIS = 3
+//The longest increasing subsequence is 3, 10, 20
+
+Input  : arr[] = {3, 2}
+Output : Length of LIS = 1
+//The longest increasing subsequences are {3} and {2}
+
+Input : arr[] = {50, 3, 10, 7, 40, 80}
+Output : Length of LIS = 4
+//The longest increasing subsequence is {3, 7, 40, 80}
